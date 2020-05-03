@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+<div class="canvas-app">
+
+  <form class="form-style-9">
+    <div class="header-container">
+        <img src="SAP Logo.png" class="header-logo"/>
+        <div class="header-profile">
+            <%= context.user.fullName %>
+        </div>
+    </div> 
+    <ul>
+        <li>
+            <input type="text" name="field1" class="field-style field-split align-left" placeholder="<%=contact.Name %>" />
+            
+            <input type="email" name="field2" class="field-style field-split align-right" placeholder="<%= contact.Email %>" />
+        </li>
+        <li>
+            <input type="text" name="field3" class="field-style field-split align-left" placeholder="<%= contact.Phone %>" />
+            <input type="url" name="field4" class="field-style field-split align-right" placeholder="Salesforce Account is <%= contact.AccountId %>" /> 
+        </li>
+        <li>
+        <input type="text" name="field3" class="field-style field-full align-none" placeholder="Salesforce Contact Id is <%= context.environment.record.Id %>" /> 
+        </li>
+        <li>
+        <textarea name="field5" class="field-style" placeholder="Notes">
+
+            
+        </textarea>
+        </li>
+        <li>
+        <input type="submit" value="Save" onclick="javascript:return false;"/>
+        </li>
+        </ul>
+  </form>
+
+ 
+</div>
+</body>
