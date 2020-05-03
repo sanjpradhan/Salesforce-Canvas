@@ -1,13 +1,12 @@
 {
-  "name": "Centrica-Canvas-Demo",
-  "version": "0.0.1",
+  "name": "Salesforce-Canvas-Demo",
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
     "express": "*",
     "salesforce-signed-request": "*",
     "body-parser": "*",
     "request": "*",
-    "ejs": "*",
-    "qrcode-npm": "*"
+    "ejs": "*"
   }
 }
